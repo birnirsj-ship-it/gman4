@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 400" role="img" aria-labelledby="t"><title id="t">Kort af miðbæ með þremur pinnum og leið á milli þeirra</title>
+<style>.p{animation:drop .7s cubic-bezier(.3,1.6,.5,1) both}.p2{animation-delay:.5s}.p3{animation-delay:1s}@keyframes drop{from{transform:translateY(-160px);opacity:0}to{transform:none;opacity:1}}.r{stroke-dasharray:6 8;animation:dash 1.5s linear infinite}@keyframes dash{to{stroke-dashoffset:-28}}@media(prefers-reduced-motion:reduce){.p,.r{animation:none}}</style>
+<rect width="480" height="400" rx="24" fill="#e9ebff"/>
+<path d="M0 310C80 280 130 340 220 320S400 290 480 330V400H0z" fill="#b9c3ff"/>
+<g stroke="#fff" stroke-width="14" fill="none" stroke-linecap="round"><path d="M40 60H440"/><path d="M60 140H420"/><path d="M60 220H400"/><path d="M110 30V260"/><path d="M240 30V270"/><path d="M370 30V250"/></g>
+<path class="r" d="M110 140H240V220H370" stroke="#3b3bdb" stroke-width="4" fill="none" stroke-linecap="round"/>
+<g class="p"><g transform="translate(110 140)"><path id="pin" d="M0 0C-12-14-20-22-20-34A20 20 0 0 1 20-34C20-22 12-14 0 0z" fill="#ffc933" stroke="#14142b" stroke-width="3"/><circle cy="-34" r="7" fill="#3b3bdb"/></g></g>
+<g class="p p2"><g transform="translate(240 220)"><use href="#pin"/><circle cy="-34" r="7" fill="#3b3bdb"/></g></g>
+<g class="p p3"><g transform="translate(370 220)"><use href="#pin"/><circle cy="-34" r="7" fill="#3b3bdb"/></g></g>
+</svg>
