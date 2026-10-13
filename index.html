@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gman Go  götuleikur </title>
+<meta name="description" content="Gman Go er götuleikur fyrir lið og einstaklinga. Finndu pinna, leystu þrautir og safnaðu stigum í miðbæ Reykjavíkur.">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<script>
+(function(){var s;try{s=localStorage.getItem("tema")}catch(e){}
+document.documentElement.dataset.theme=s||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light")})();
+</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css">
+<link rel="stylesheet" href="verk6.css">
+</head>
+<body>
+
+<header class="gg-top" id="top">
+  <nav class="container" aria-label="Aðalvalmynd">
+    <ul>
+      <li><a class="brand" href="#top"><img src="img/logo.svg" alt="" width="32" height="32">Gman Go</a></li>
+    </ul>
+    <ul>
+      <li class="desk"><a href="#um">Um viðburðinn</a></li>
+      <li class="desk"><a href="#timi">Tímasetning</a></li>
+      <li class="desk"><a href="#dagskra">Dagskrá</a></li>
+      <li class="desk"><a href="#skraning">Skráning</a></li>
+      <li class="desk"><a href="#fyrirtaeki">Um okkur</a></li>
+      <li class="mob">
+        <details class="dropdown">
+          <summary>Efnisyfirlit</summary>
+          <ul>
+            <li><a href="#um">Um viðburðinn</a></li>
+            <li><a href="#timi">Tímasetning</a></li>
+            <li><a href="#dagskra">Dagskrá</a></li>
+            <li><a href="#skraning">Skráning</a></li>
+            <li><a href="#fyrirtaeki">Um okkur</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><button id="tema" class="outline secondary" type="button" aria-label="Skipta á milli ljóss og dökks útlits">◐</button></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div>
+        <h1>Gman Go</h1>
+        <p>you go Gman! Götuleikur í miðbæ Reykjavíkur. Þú gengur á milli pinna, leysir þrautir með símann í hendi og safnar stigum fyrir liðið þitt.</p>
+        <a href="#skraning" role="button">Skrá mig til leiks</a>
+      </div>
+      <img src="img/hero.svg" alt="kort sem er með cool animation" width="480" height="400">
+    </div>
+  </section>
+
+  <section id="um">
+    <div class="container tvi">
+      <div>
+        <h2>Um viðburðinn</h2>
+        <p>Gman Go er útileikur fyrir 2–5 manna lið og einstaklinga. Á korti í símanum birtast pinnar víðs vegar um miðbæinn. Á hverjum pinna bíður þraut, ljósmyndaáskorun eða spurning um borgina.</p>
+        <p>Leikurinn tekur um fjórar klukkustundir og hentar öllum sem geta gengið rólega. Enginn þarf að kunna neitt fyrirfram – aðeins að vera forvitinn og tilbúinn að hreyfa sig.</p>
+      </div>
+      <img src="img/bikar.svg" alt="!allman biker!" width="240" height="320">
+    </div>
+  </section>
+
+  <section id="timi">
+    <div class="container">
+      <h2>Tímasetning</h2>
+      <dl class="fakta">
+        <div><dt>Dagsetning</dt><dd>Laugardagur 15. maí 2027</dd></div>
+        <div><dt>Mæting og skráning</dt><dd>kl. 11:30</dd></div>
+        <div><dt>Leikurinn hefst</dt><dd>kl. 12:00</dd></div>
+        <div><dt>Verðlaun</dt><dd>kl. 16:30</dd></div>
+        <div><dt>Staðsetning</dt><dd>Ingólfstorg, Reykjavík</dd></div>
+        <div><dt>Verð</dt><dd>2.900 kr. á mann</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="dagskra">
+    <div class="container">
+      <h2>Dagskrá</h2>
+      <div class="overflow-auto">
+        <table>
+          <caption class="visually-hidden">Dagskrá Gman Go laugardaginn 15. maí 2027</caption>
+          <thead>
+            <tr><th scope="col">Tími</th><th scope="col">Dagskrárliður</th><th scope="col">Staðsetning</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>11:30</td><td>Mæting og skráning liða</td><td>Ingólfstorg</td></tr>
+            <tr><td>12:00</td><td>Leikurinn hefst</td><td>Ingólfstorg</td></tr>
+            <tr><td>12:15–15:00</td><td>Pinnar í miðbænum</td><td>Miðbær Reykjavíkur</td></tr>
+            <tr><td>15:30</td><td>Lokapinni og mark</td><td>Harpa</td></tr>
+            <tr><td>16:00</td><td>Stigagjöf og kaffi</td><td>Harpa</td></tr>
+            <tr><td>16:30</td><td>Verðlaunaafhending</td><td>Harpa</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="skraning">
+    <div class="container">
+      <h2>Skráning</h2>
+      <form id="skraning-form">
+        <div class="grid">
+          <label>Nafn
+            <input type="text" name="nafn" autocomplete="name" required placeholder="Fullt nafn">
+          </label>
+          <label>Netfang
+            <input type="email" name="netfang" autocomplete="email" required placeholder="nafn@example.is">
+          </label>
+        </div>
+        <label>Símanúmer
+          <input type="tel" name="simi" autocomplete="tel" pattern="[0-9]{3}[ \-]?[0-9]{4}" title="Sjö tölustafir, t.d. 000 0000" placeholder="000 0000">
+        </label>
+        <label>Þátttaka
+          <select id="tegund" name="tegund" required>
+            <option value="einstaklingur" selected>Einstaklingur</option>
+            <option value="lid">Lið</option>
+          </select>
+        </label>
+        <div id="lid-reitur" hidden>
+          <label>Nafn liðs
+            <input type="text" id="lidsnafn" name="lidsnafn" placeholder="Til dæmis Pinnaveiðararnir">
+          </label>
+          <label>Fjöldi í liði
+            <select name="fjoldi">
+              <option>2</option><option>3</option><option>4</option><option>5</option>
+            </select>
+          </label>
+        </div>
+        <label>
+          <input type="checkbox" name="samthykki" required>
+          Ég samþykki að fylgja leikreglum Gman Go
+        </label>
+        <button type="submit">Skrá mig</button>
+        <p id="stada" role="status" hidden></p>
+      </form>
+    </div>
+  </section>
+
+  <section id="fyrirtaeki">
+    <div class="container">
+      <h2>Um Gman Studios</h2>
+      <p>Gman Studios er lítið hönnunar- og leikjafyrirtæki í Reykjavík sem býr til leiki sem fara fram úti í raunheimum. Við hófum störf árið 2023 og hönnum götuleiki, rathlaupsleiki og sögugöngur fyrir fyrirtæki, skóla og vinahópa.</p>
+      <p>Netfang: <a href="mailto:hallo@gmanstudios.com">hallo@gmanstudios.com</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="container">
+  <small>birnirsj verkefni 6</small>
+</footer>
+
+<script>
+(function(){
+var r=document.documentElement,
+t=document.getElementById("tegund"),l=document.getElementById("lid-reitur"),n=document.getElementById("lidsnafn"),
+f=document.getElementById("skraning-form"),s=document.getElementById("stada");
+document.getElementById("tema").addEventListener("click",function(){
+var v=r.dataset.theme==="dark"?"light":"dark";r.dataset.theme=v;
+try{localStorage.setItem("tema",v)}catch(e){}});
+t.addEventListener("change",function(){var lid=t.value==="lid";l.hidden=!lid;n.required=lid});
+f.addEventListener("submit",function(e){e.preventDefault();
+s.hidden=false;s.textContent="Takk, "+f.nafn.value+"! Þetta er aðeins útlit, skráningin vistast ekki."});
+})();
+</script>
+</body>
+</html>
